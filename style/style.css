@@ -25,6 +25,7 @@ main
 {
     /* display: flex; */
     margin: auto;
+    margin-top: 200px;
     justify-content: center;
     align-items: center;
     background: linear-gradient(purple, crimson);

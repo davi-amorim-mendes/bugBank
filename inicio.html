@@ -10,26 +10,21 @@
 <body>
     <main>
         <h1>Bug Bank</h1>
-        <form>
-            <div class="divForm">
-                Email:
-            </div>
-            <input type="text" name="email" id="email" required>
-            <div class="divForm">
-                Senha:
-            </div>
-            <input type="text" name="email" id="email" required>
-            <div class="divForm">
-                <button onclick="log()">Login</button>
-                <button onclick="cad()">Cadastro</button>
-            </div>
-        </form>
+        <div class="divForm">
+            <p id="pUsuario">Olá usuário!</p>
+            <p id="pConta">Conta digital: <strong>619-9</strong></p>
+            <p id="pSaldo">Saldo em conta <strong>R$ 500</strong></p>
+        </div>
+        <div class="divForm">
+            <button>Transferência</button>
+            <button onclick="back()">Sair</button>
+        </div>
     </main>
 </body>
 <script>
-    function log()
+    function back()
     {
-        window.location.href = "inicio.html";
+        window.location.href = "index.html";
     }
     function cad()
     {
