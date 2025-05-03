@@ -10,32 +10,23 @@
 <body>
     <main>
         <img src="logo/logo.png" id="logo">
-        <div class="formulario" id="cadastro">
-            <form>
+        <div class="formulario">
+            <form id="loginForm">
                 <div class="divForm">
                     E-mail:
                 </div>
-                <input type="text" name="email" id="email" placeholder="Informe seu e-mail" required>
+                <input type="email" id="email" placeholder="Informe seu e-mail" required>
                 <div class="divForm">
                     Senha:
                 </div>
-                <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required>
+                <input type="password" id="senha" placeholder="Informe sua senha" required>
                 <div class="divForm">
-                    <button onclick="log()">Login</button>
-                    <button onclick="cad()">Cadastro</button>
+                    <button type="submit">Login</button>
                 </div>
+                <p><a href="cadastro.html">Cadastrar</a></p>
             </form>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
-<script>
-    function log()
-    {
-        window.location.href = "inicio.html";
-    }
-    function cad()
-    {
-        window.location.href = "cadastro.html";
-    }
-</script>
 </html>

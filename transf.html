@@ -10,13 +10,13 @@
 <body>
     <main>
         <img src="logo/logo.png" id="logo">
-        <button onclick="back()" id="voltar"><i class="fa-solid fa-backward"></i></button>
+        <button onclick="back()"><i class="fa-solid fa-backward"></i></button>
         <div class="formulario">
-            <form>
+            <form id="transfForm">
                 <div class="divForm">
                     Número da conta:
                 </div>
-                <input type="number" name="numConta" id="numConta" placeholder="Informe o número da conta" required>
+                <input type="text" name="numConta" id="numConta" placeholder="Informe o número da conta de destino" required>
                 <div class="divForm">
                     Valor da transferência:
                 </div>
@@ -24,15 +24,16 @@
                 <div class="divForm">
                     Descrição (opcional):
                 </div>
-                <input type="text" name="desc" id="desc" placeholder="Informe sua senha" required>
+                <input type="text" name="desc" id="desc" placeholder="Descrição (opcional)">
                 <div class="divForm">
-                    <button type="submit" onclick="cad()">Transferir agora</button>
+                    <button type="submit">Transferir</button>
                 </div>
             </form>
         </div>
     </main>
+    <script src="transf.js"></script>
+
 </body>
-<script src="script/script.js"></script>
 <script>
     function back()
     {
