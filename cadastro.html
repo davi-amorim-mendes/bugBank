@@ -12,7 +12,7 @@
         <img src="logo/logo.png" id="logo">
         <button onclick="back()" id="voltar"><i class="fa-solid fa-backward"></i></button>  
         <div class="formulario">
-            <form>
+            <form id="cadastroForm">
                 <div class="divForm">
                     Email:
                 </div>
@@ -30,17 +30,12 @@
                 </div>
                 <input type="password" name="conSenha" id="conSenha" placeholder="Repita sua senha" required>
                 <div class="divForm">
-                    <button type="submit" onclick="cad()">Cadastrar</button>
+                    <button type="submit">Cadastrar</button>
                 </div>
             </form>
         </div>
     </main>
+    <script src="cadastro.js"></script>
 </body>
-<script src="script/script.js"></script>
-<script>
-    function back()
-    {
-        window.location.href = "index.html";
-    }
-</script>
+
 </html>
