@@ -9,14 +9,16 @@
 </head>
 <body>
     <main>
-        <h1>Bug Bank</h1>
-        <div class="divForm">
-            <p id="pUsuario">Olá usuário!</p>
-            <p id="pConta">Conta digital: <strong>619-9</strong></p>
-            <p id="pSaldo">Saldo em conta <strong>R$ 500</strong></p>
+        <div class="formulario">
+            <i class="fa-solid fa-circle-user" id="user"></i>
+            <div class="divForm">
+                <p id="pUsuario">Olá usuário!</p>
+                <p id="pConta">Conta digital: <strong>619-9</strong></p>
+                <p id="pSaldo">Saldo em conta <strong>R$ 500</strong></p>
+            </div>
         </div>
-        <div class="divForm">
-            <button>Transferência</button>
+        <div class="formulario">
+            <button onclick="trans()">Transferência</button>
             <button onclick="back()">Sair</button>
         </div>
     </main>
@@ -26,9 +28,9 @@
     {
         window.location.href = "index.html";
     }
-    function cad()
+    function trans()
     {
-        window.location.href = "cadastro.html";
+        window.location.href = "transf.html";
     }
 </script>
 </html>

@@ -9,29 +9,31 @@
 </head>
 <body>
     <main>
-        <h1>Bug Bank</h1>
-        <button onclick="back()"><i class="fa-solid fa-backward"></i></button>
-        <form>
-            <div class="divForm">
-                Email:
-            </div>
-            <input type="text" name="email" id="email" placeholder="Informe seu e-mail" required>
-            <div class="divForm">
-                Nome:
-            </div>
-            <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
-            <div class="divForm">
-                Senha:
-            </div>
-            <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required>
-            <div class="divForm">
-                Confirme sua senha:
-            </div>
-            <input type="password" name="conSenha" id="conSenha" placeholder="Repita sua senha" required>
-            <div class="divForm">
-                <button type="submit" onclick="cad()">Cadastrar</button>
-            </div>
-        </form>
+        <img src="logo/logo.png" id="logo">
+        <button onclick="back()" id="voltar"><i class="fa-solid fa-backward"></i></button>  
+        <div class="formulario">
+            <form>
+                <div class="divForm">
+                    Email:
+                </div>
+                <input type="text" name="email" id="email" placeholder="Informe seu e-mail" required>
+                <div class="divForm">
+                    Nome:
+                </div>
+                <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
+                <div class="divForm">
+                    Senha:
+                </div>
+                <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required>
+                <div class="divForm">
+                    Confirme sua senha:
+                </div>
+                <input type="password" name="conSenha" id="conSenha" placeholder="Repita sua senha" required>
+                <div class="divForm">
+                    <button type="submit" onclick="cad()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
     </main>
 </body>
 <script src="script/script.js"></script>
