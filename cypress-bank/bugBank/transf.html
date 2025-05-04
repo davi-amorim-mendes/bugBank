@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bank</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <img src="logo/logo.png" id="logo">
+        <button i onclick="back()"><i class="fa-solid fa-backward"></i></button>
+        <div class="formulario">
+            <form id="transfForm">
+                <div class="divForm">
+                    Número da conta:
+                </div>
+                <input type="text" name="numConta" id="numConta" placeholder="Informe o número da conta de destino" required>
+                <div class="divForm">
+                    Valor da transferência:
+                </div>
+                <input type="number" name="valTrans" id="valTrans" placeholder="Informe o valor que será tranferido" required>
+                <div class="divForm">
+                    Descrição (opcional):
+                </div>
+                <input type="text" name="desc" id="desc" placeholder="Descrição (opcional)">
+                <div class="divForm">
+                    <button type="submit" id="buttonTransf">Transferir</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="transf.js"></script>
+
+</body>
+</html>
