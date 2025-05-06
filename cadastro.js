@@ -25,12 +25,7 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
 
     const numeroConta = Math.floor(100000 + Math.random() * 900000).toString();
 
-    usuarios[email] = {
-        nome: nome,
-        senha: senha,
-        saldo: 1000,
-        conta: numeroConta
-    };
+    
 
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
     alert(`Cadastro realizado! Sua conta é: ${numeroConta}`);

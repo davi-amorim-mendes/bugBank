@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const email = localStorage.getItem("usuarioLogado");
+    // Conta padrão
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || {};
+    const contaPadraoEmail = "padrao@email.com";
+
+    if (!usuarios[contaPadraoEmail]) {
+        usuarios[contaPadraoEmail] = {
+            nome: "Usuário Padrão",
+            senha: "1234", // 
+            saldo: 1000.00,
+            conta: "100000"
+        };
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        console.log("Conta padrão criada.");
+    }
+
+    // 🔹 Verificação de login
+    const email = localStorage.getItem("usuarioLogado");
 
     if (!email || !usuarios[email]) {
         alert("Usuário não logado.");
