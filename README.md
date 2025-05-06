@@ -117,7 +117,6 @@ Resultado Esperado :Redirecionar para index.html
 
 1.TypeError:Cannot read properties of null(reading 'addEventListener')
 
-![novo erro](https://github.com/user-attachments/assets/a940ed31-3b6d-40c8-af45-70290b9cb77c)
 
 Causa :O Dom ainda não carregou completamente ao executar o script .
 
@@ -140,4 +139,5 @@ Solução : Adicionar o Botão com esse ID .
 Causa :Cypress limpa o localStorage por padrão a cada novo teste .
 
 Solução :Criar um usuário padrão .
+![Captura de tela 2025-05-06 194049](https://github.com/user-attachments/assets/4dd7c3aa-546a-4134-a885-32282cddaae9)
 
