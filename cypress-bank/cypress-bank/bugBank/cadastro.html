@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bank</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <img src="logo/logo.png" id="logo">
+        <button id="voltar" onclick="back()" id="voltar"><i class="fa-solid fa-backward"></i></button>  
+        <div class="formulario">
+            <form id="cadastroForm">
+                <div class="divForm">
+                    Email:
+                </div>
+                <input type="text" name="email" id="email" placeholder="Informe seu e-mail" required>
+                <div class="divForm">
+                    Nome:
+                </div>
+                <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
+                <div class="divForm">
+                    Senha:
+                </div>
+                <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required>
+                <div class="divForm">
+                    Confirme sua senha:
+                </div>
+                <input type="password" name="conSenha" id="conSenha" placeholder="Repita sua senha" required>
+                <div class="divForm">
+                    <button id="buttonCadastro" type="submit">Cadastrar</button>
+                </div>
+             
+            </form>
+        </div>
+    </main>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+background: linear-gradient(120deg,#070705,#89a09a);
+display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+
+}
+
+body::before {
+    content: "";
+    background-image: url(https://glaucialima.com/wp-content/uploads/2019/09/celular.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.04; /* Ajuste este valor entre 0 (transparente) e 1 (opaco) */
+}
+
+h1
+{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main
+{
+ 
+    margin:  auto;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(120deg,#d0dfe2a8 ,#f1f1dc);
+    padding: 30px;
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+    width: 42vw;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.formulario
+{
+
+    margin: auto;
+    margin-top: -50px;
+    padding: 50px;
+}
+
+input
+{
+    background: linear-gradient(#c4c4c4, rgb(133, 133, 133));
+    width: 30vw;
+    border-radius: 10px;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    color: black;
+}
+
+.divForm
+{
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+button
+{
+    width: 30vw;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    font-size: 18px;
+}
+
+button:hover
+{
+    transition: 0.3s;
+    background: linear-gradient(black, #4b4b4b);
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#voltar
+{
+    margin-left: 50px;
+}
+ #voltar{
+    width: 50px;
+}
+#logo
+{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 350px;
+}
+
+#user
+{
+    justify-content: left;
+    font-size: 130px;
+  
+}
+p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+a{
+    color: black;
+    text-decoration: none ;
+
+ 
+}
+p:hover{
+    font-size: 25px;
+
+}
+
+
+#trans{
+    margin-top: 30px;
+    width: 30vw;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    font-size: 18px;
+}
+#trans:hover,#sair:hover
+{
+    transition: 0.3s;
+    background: linear-gradient(black, #4b4b4b);
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+#sair{
+    margin-top: 30px;
+    width: 30vw;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    font-size: 18px;
+}
+#pUsuario,#pConta,#pSaldo{
+   
+margin-left: 125.20px;
+margin-top: -40px;
+
+
+}
