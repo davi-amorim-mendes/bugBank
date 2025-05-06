@@ -1,9 +1,8 @@
+DOCUMENTAÇÃO DE TESTES-LOGIN VULTURE´S BANK
 
-Documentação de Testes-Login Vulture´s Bank
+#PÁGINA INDEX
 
-##Pagina 
-![arealogado](https://github.com/user-attachments/assets/aee69de8-5213-4604-9f99-6ef954e1e490)
-![paginabanco](https://github.com/user-attachments/assets/4bc57c56-e53d-4124-a66a-398d7b5a5acd)![novo erro](https://github.com/user-attachments/assets/a940ed31-3b6d-40c8-af45-70290b9cb77c)
+![paginabanco](https://github.com/user-attachments/assets/4bc57c56-e53d-4124-a66a-398d7b5a5acd)
 
 
 
@@ -118,13 +117,13 @@ Resultado Esperado :Redirecionar para index.html
 
 1.TypeError:Cannot read properties of null(reading 'addEventListener')
 
-![areatransferencia](https://github.com/user-attachments/assets/e506ede1-9df5-46f9-9215-0511b62cd018)
+![novo erro](https://github.com/user-attachments/assets/a940ed31-3b6d-40c8-af45-70290b9cb77c)
 
 Causa :O Dom ainda não carregou completamente ao executar o script .
 
 Solução: Usar o evento DOMcontntLoaded :
 
-EX:
+
 ![solução](https://github.com/user-attachments/assets/79d52ff5-4239-442e-930b-bce6dc8c1be0)
 
 
