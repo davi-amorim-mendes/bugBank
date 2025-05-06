@@ -16,6 +16,12 @@ document.getElementById("transfForm").addEventListener("submit", function(event)
       alert("Preencha os campos corretamente.");
       return;
   }
+  usuarios[numContaDestino] = {
+    nome: "Ruan",
+    senha: 1234,
+    saldo: 0,
+    conta: 100000
+};
 
   const usuarioOrigem = usuarios[email];
   const destino = Object.values(usuarios).find(u => u.conta === numContaDestino);
