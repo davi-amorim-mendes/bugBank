@@ -67,7 +67,7 @@ main
 input
 {
     background: linear-gradient(#c4c4c4, rgb(133, 133, 133));
-    width: 30vw;
+    width: 33vw;
     border-radius: 10px;
     border: none;
     padding: 18px;
@@ -84,7 +84,7 @@ input
 
 button
 {
-    width: 30vw;
+    width: 33vw;
     padding: 16px;
     border: none;
     border-radius: 10px;
