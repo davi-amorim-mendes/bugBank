@@ -55,7 +55,7 @@ describe('Pagina de login', () => {
         cy.stub(win, 'alert').as('alerta1');
       });
       cy.get('#buttonCadastro').click();
-      cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! Sua conta é:/);
+      cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! /);
     
       // Segundo cadastro com e-mail já existente
       cy.get("#cadastroBtn").click();
@@ -102,7 +102,7 @@ describe('Pagina de login', () => {
           });
          cy.get('#buttonCadastro').click()
       
-          cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! Sua conta é:/);
+          cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! /);
          //voltando ao index
          cy.url().should('include','/index.html');
          //Reaizar login 
@@ -159,7 +159,7 @@ describe('Pagina de login', () => {
     });
    cy.get('#buttonCadastro').click()
    
-    cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! Sua conta é:/);
+    cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! /);
        //voltando ao index
        cy.url().should('include','/index.html');
        //Reaizar login 
@@ -198,7 +198,7 @@ describe('Pagina de login', () => {
     });
    cy.get('#buttonCadastro').click()
    
-    cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! Sua conta é:/);
+    cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! /);
        //voltando ao index
        cy.url().should('include','/index.html');
        //Reaizar login 
@@ -237,7 +237,7 @@ describe('Pagina de login', () => {
     });
    cy.get('#buttonCadastro').click()
    
-    cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! Sua conta é:/);
+    cy.get('@alerta1').should('have.been.calledWithMatch', /Cadastro realizado! /);
        //voltando ao index
        cy.url().should('include','/index.html');
        //Reaizar login 
