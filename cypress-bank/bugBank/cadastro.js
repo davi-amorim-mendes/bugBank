@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     };
 
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    alert(`Cadastro realizado! Sua conta é:`);
+    alert(`Cadastro realizado! `);
     window.location.href = "index.html";
 });
 
